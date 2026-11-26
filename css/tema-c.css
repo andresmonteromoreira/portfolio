@@ -1,0 +1,25 @@
+/* C · Catálogo industrial, versión clara: piedra fría, grafito, latón; el producto iluminado como protagonista. */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+:root {
+  --bg:#e3e3df; --ink:#1d2124; --muted:#5f6468; --panel:#ecece8;
+  --rule:#cbccc7; --rule-strong:#9fa29f;
+  --accent:#8f6420; --accent-text:#74511a; --accent-ink:#ffffff;
+  --nav-bg:rgba(227,227,223,.9);
+  --stage-bg:#d4d5d1; --stage-border:0;
+  --contact-bg:#2b3034; --contact-ink:#ecebe7;
+  --f-head:"Archivo",system-ui,sans-serif; --f-body:"Archivo",system-ui,sans-serif; --f-mono:"JetBrains Mono",ui-monospace,monospace;
+  --w-head:500; --w-light:300; --w-body:400; --ls-head:-.025em;
+  --img-blend:multiply;
+  --scene-edges:0; --m-cast:#56656e; --m-machined:#9aa4aa; --m-steel:#8b979f; --m-polished:#c3cbd0; --m-bronze:#b8843f; --m-hub:#64737c; --m-race:#8e9ba4; --m-bright:#cfd5d9; --m-rubber:#1f2326; --m-oxide:#2d3134; --m-inox:#a9b0b4; --m-polymer:#2a2e31; --m-shim:#b8843f; --m-accent:#a97a2f; --m-edge:#1d2124;
+  --s1:#2b3034; --s2:#a97a2f; --s3:#8a9094; --heat-lo:#ecece8; --heat-hi:#a97a2f;
+}
+.stage { background:radial-gradient(120% 90% at 50% 38%, #f4f4f1 0%, #dcddd9 55%, #c9cbc7 100%); box-shadow:inset 0 0 0 1px rgba(0,0,0,.04); }
+.stage .phases span, .stage .readout, .stage .toggle button { background:rgba(244,244,241,.85); }
+.proj { border-top:0; }
+.proj:nth-of-type(even) { background:#d9dad5; }
+.proj-head h2 { font-weight:500; }
+.ficha { border:0; background:#ecece8; }
+.ficha div { border-right:1px solid var(--rule); }
+.index .thumb { background:radial-gradient(100% 80% at 50% 40%, #f6f6f3, #d6d7d3); }
+.intro .kicker { color:var(--accent-text); }
+.gallery img { filter:saturate(.85) contrast(1.02); }
