@@ -596,7 +596,8 @@ function ciclo(svg, t) {
 
 Object.assign(TEXT.es, TFM_TEXT.es); Object.assign(TEXT.en, TFM_TEXT.en);
 const FIGURES = {centrifugo, disparo, mordazas, ciclo};
-import {modelos, secciones} from './v4-tfm3d.js';
+import {secciones} from './v4-tfm3d.js';
+import {modelos} from './video.js';
 const CUSTOM = {'tfm-modelos': modelos, 'tfm-secciones': secciones, 'tfm-universidades': universidades, 'tfm-resultados-locales': resultadosLocales, 'tfm-junta': junta, 'tfm-contorno': contorno, 'tfm-malla': malla, 'tfm-materiales': materiales, 'tfm-explorador': explorador};
 
 // ---------------------------------------------------------------- Ejecución

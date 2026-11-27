@@ -250,7 +250,7 @@ async function loadScene(scene) {
   scene.task = (async () => {
     const {id, stage} = scene;
     try {
-      const module = await import('./v2-' + SCENES[id] + '.js');
+      const module = await import('./video.js');
       scene.engine = await module.create(stage, {id, ui, lang, tema, reduced, json, css, fmt});
       stage.querySelector('.loading').remove();
       stage.dataset.ready = 'true';
@@ -328,7 +328,7 @@ async function goToStep(id, key) {
 }
 window.__portfolio = {scenes: sceneNodes, goToStep};
 
-// Cambiar de vista recarga la página: cada proyecto arranca limpio sus escenas 3D.
+// Cambiar de vista recarga la página: cada proyecto arranca limpio sus escenas.
 history.scrollRestoration = 'manual';
 const HOME_Y = 'portfolio.homeY';
 const jump = top => scrollTo({top, behavior: 'instant'});

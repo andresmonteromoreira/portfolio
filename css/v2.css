@@ -412,3 +412,9 @@ button.btn{cursor:pointer}
 .contact .btn{background:transparent;color:var(--contact-ink);border-color:var(--contact-ink)}.contact .btn:hover{background:var(--contact-ink);color:var(--contact-bg)}
 @media(max-width:900px){.intro.home .bio,.intro.home .tools{grid-column:1/-1}.intro.home .profile{grid-template-columns:minmax(0,1fr)}}
 .pcard:hover .pcard-img img[src$='-giro.webp'],.pcard:hover .pcard-img img[src$='-carga.webp']{transform:none}
+
+/* ---------- escenas grabadas en vídeo ---------- */
+.stage .scene-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.stage .scene-video.blend{object-fit:contain;mix-blend-mode:multiply}
+.tf-3dstage .tf-3dvideo{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+.tf-3dstage:has(.tf-3dvideo){height:auto;aspect-ratio:5/3;border:0;max-width:1000px;width:100%;justify-self:center}
